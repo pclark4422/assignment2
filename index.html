@@ -2,13 +2,118 @@
 <html>
   <head>
     <title> Assignment 2 </title>
+    <link rel="stylesheet" type="text/css" href=".\style\style.css">
   </head>
-<!-- This is a comment -->
+<!-- Header element displays the website title and navigation elements.
+  The navigation elements are fixed-->
   <header>
-    <h1> Placeholder</h1>
+
+    <h1>Bob's Sandwhich Shop</h1>
+
+    <span id="navBar">
+      <button type="button" name="home">Home </button>
+      <button type="button" name="home">Review Table Order </button>
+      <button type="button" name="home">Checkout </button>
+    </span>
+
   </header>
 
+<!--The body contains the Order Form.   -->
   <body>
-    <h2> Placeholder</h2>
+
+    <!-- The structure of the order form-->
+    <form>
+      <h2>Order Form</h2>
+
+      <!-- An input for the server's name-->
+      <label for="name">Name: <input type="text" name="name"></label>
+
+      <!-- A dropdown list for selecting where the order is going-->
+      <label for="table">
+        Table#:
+        <select name="table">
+          <option value="togo"> To Go </option>
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+          <option value="6"> 6 </option>
+          <option value="7"> 7 </option>
+          <option value="8"> 8 </option>
+          <option value="9"> 9 </option>
+          <option value="10"> 10 </option>
+        </select>
+
+      </label>
+
+      <!--A sub division that contains the sandwhich type and what toppings -->
+      <fieldset id="main">
+
+        <!-- Field for sandwhich type -->
+        <fieldset>
+          Sandwhich type:
+          <label>
+            <input type="radio" name="sandwhich">
+            6-Inch Sub
+          </label>
+
+          <label>
+            <input type="radio" name="sandwhich">
+            12-Inch Sub
+          </label>
+
+          <label>
+            <input type="radio" name="sandwhich">
+            Sliced Bread
+          </label>
+        </fieldset>
+
+        <!-- Field for toppings  -->
+        <fieldset>
+          Toppings:
+          <label>
+            <input type="checkbox" name="lettuce">
+            Lettuce
+          </label>
+
+          <label>
+            <input type="checkbox" name="tomato">
+            Tomato
+          </label>
+
+          <label>
+            <input type="checkbox" name="onions">
+            Onions
+          </label>
+
+          <label>
+            <input type="checkbox" name="grnPepper">
+            Green Pepprs
+          </label>
+
+          <label>
+            <input type="checkbox" name="pickle">
+            Pickles
+          </label>
+
+          <label>
+            <input type="checkbox" name="blkOlive">
+            Black Olives
+          </label>
+
+        </fieldset>
+
+      </fieldset>
+
+      <!-- Order submit button-->
+      <button type="submit" id="submit">Enter Order</button>
+    </form>
+
   </body>
+
+  <footer>
+    <!-- Copyright info and follow me link -->
+    <p>&copy Phillip Clark  <a href="">Follow Me</a></p>
+  </footer>
 </html>

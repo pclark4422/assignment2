@@ -1,0 +1,82 @@
+/*Formats the site and adds a background image for screens under 900px wide
+  Wider screens cause the background image to repeat unwantedly*/
+@media screen and (max-width: 900px){
+
+  body{
+    align-content: center;
+    text-align: center;
+    background-image: url("../img/vegSlices.png");
+    font: 1em;
+    margin: 2em;
+  }
+
+  header{
+    align-content: center;
+    text-align: center;
+  }
+
+  h1{
+    background-color: teal;
+  }
+  #navBar{
+    align-self: center;
+    background-color: grey;
+    border: none;
+    padding: 1em;
+  }
+  form{
+    margin: .8em;
+    background-color: grey;
+    padding: .5em;
+    position: relative;
+    border solid;
+  }
+  form > label{
+    margin: .5em;
+    padding: .5em;
+    text-align: center;
+  }
+  fieldset{
+    text-align: justify;
+    padding: .5em;
+    margin: .5em;
+  }
+  #submit{
+    position: absolute;
+    bottom: 0;
+    right: .25em;
+    margin: .75em;
+  }
+
+  #main{
+    margin-bottom: 2em;s
+  }
+
+  footer>p{
+    font-size: .75em;
+    background-color:white;
+    position: absolute;
+    display: inline;
+    bottom: 0;
+    right: 0;
+  }
+
+}
+
+/*Basic formatting for screens over 900px wide */
+@media screen and (min-width: 900px){
+
+  body{
+    background-color: teal;
+    align-content: center;
+    text-align: center;
+  }
+
+  footer{
+    font-size: .75em;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
